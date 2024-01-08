@@ -47,8 +47,8 @@ def home():
 
     This application allows you to explore and visualize different clustering models using the Iris dataset.
     
-    - Navigate to the "Base de données" section to choose a dimensionality reduction method and visualize the graph.
-    - Move to the "Modèle" section to choose a clustering model and visualize the clustering graph.
+    - Navigate to the Base de données section to choose a dimensionality reduction method and visualize the graph.
+    - Move to the Modèle section to choose a clustering model and visualize the clustering graph.
     - Explore the "Evaluation" section to see the performance metrics of the selected clustering model.
 
     Enjoy exploring the fascinating world of clustering!
