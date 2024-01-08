@@ -8,6 +8,8 @@ from streamlit_option_menu import option_menu
 from sklearn.datasets import load_iris
 from sklearn.metrics import confusion_matrix, classification_report
 import plotly.figure_factory as ff
+from streamlit_lottie import st_lottie
+import requests 
 
 # Fonction pour appliquer KMeans
 def apply_kmeans(data, n_clusters):
@@ -49,10 +51,29 @@ def home():
     
     - Navigate to the Base de données section to choose a dimensionality reduction method and visualize the graph.
     - Move to the Modèle section to choose a clustering model and visualize the clustering graph.
-    - Explore the "Evaluation" section to see the performance metrics of the selected clustering model.
+    - Explore the Evaluation section to see the performance metrics of the selected clustering model.
 
     Enjoy exploring the fascinating world of clustering!
     """)
+    url = requests.get( 
+        "https://lottie.host/6ca91fe2-7f9a-41e0-972c-7224b42588ad/GhiQUEtalX.json") 
+    # Creating a blank dictionary to store JSON file, 
+    # as their structure is similar to Python Dictionary 
+    url_json = dict() 
+    
+    if url.status_code == 200: 
+        url_json = url.json() 
+        st_lottie(url_json, 
+        reverse=True, 
+        height=400, 
+        width=600, 
+        speed=1, 
+        loop=True, 
+        quality='high'
+        )
+    else: 
+        print("Error in the URL") 
+    
 
 def createdata():
     iris = load_iris()
