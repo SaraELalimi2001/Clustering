@@ -42,7 +42,17 @@ def apply_dimensionality_reduction(data, method, n_components=2):
 # Page d'accueil
 def home():
     st.title("Clustering App")
-    st.write("Bienvenue dans l'application de clustering!")
+    st.write("""
+    Welcome to the Clustering App!
+
+    This application allows you to explore and visualize different clustering models using the Iris dataset.
+    
+    - Navigate to the "Base de données" section to choose a dimensionality reduction method and visualize the graph.
+    - Move to the "Modèle" section to choose a clustering model and visualize the clustering graph.
+    - Explore the "Evaluation" section to see the performance metrics of the selected clustering model.
+
+    Enjoy exploring the fascinating world of clustering!
+    """)
 
 def createdata():
     iris = load_iris()
