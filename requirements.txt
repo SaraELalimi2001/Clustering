@@ -59,6 +59,4 @@ watchdog==3.0.0
 zipp==3.17.0
 streamlit-lottie 
 requests==2.31.0
-jsonschema==4.20.0
-jsonschema-specifications==2023.12.1
 json 
