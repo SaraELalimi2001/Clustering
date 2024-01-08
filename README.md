@@ -45,9 +45,6 @@ Note: Make sure to follow these steps in the indicated order.
 
 This project is licensed under the MIT License 
 
----
-
-
-This application was created with Streamlit. For more information on Streamlit, [visit the official documentation](https://docs.streamlit.io/).
+## Application Link
 
 To access the deployed application, [click here](insert_your_deployed_app_link_here).
