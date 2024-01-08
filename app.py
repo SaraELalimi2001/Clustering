@@ -10,6 +10,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 import plotly.figure_factory as ff
 from streamlit_lottie import st_lottie
 import requests 
+import json
 
 # Fonction pour appliquer KMeans
 def apply_kmeans(data, n_clusters):
