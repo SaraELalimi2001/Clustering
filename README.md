@@ -47,4 +47,4 @@ This project is licensed under the MIT License
 
 ## Application Link
 
-To access the deployed application, [click here](insert_your_deployed_app_link_here).
+To access the deployed application, [click here](https://clustering-bx4hdsnjblydv4riwlrp6u.streamlit.app/).
